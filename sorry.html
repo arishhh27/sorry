@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fbe3e8;
+            color: #333;
+            padding: 50px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #d6336c;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #a3224f;
+        }
+
+        #message {
+            display: none;
+            font-size: 1.4em;
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out;
+            color: #a3224f;
+            font-weight: bold;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I'm Sorry</h1>
+    <p>I've realized my mistake, and I truly regret it.</p>
+    <button onclick="showMessage()">Click to Read My Apology</button>
+
+    <p id="message">
+        Is na cheez se anjaanay me khudgarzi ka muzahira hogya,<br>
+        Tahe dil se mazirat khua h,<br>
+        Is dafa maaf krdijie,<br><br>
+        (Aapsay larday bina mza nhi aata pr aap nrz hojatay h to)<br>
+        Aap ki nrzgi hmaray dil ki khafgee ka sabab bnti h.
+    </p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
